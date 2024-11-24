@@ -1,3 +1,3 @@
 # Welcome_on_board
 
-This is an exercice from the Wild Code School for pratice HTML and CSS skills with reponsive desktop version
+This is an exercise from the Wild Code School for practicing HTML and CSS skills with a responsive desktop version.
