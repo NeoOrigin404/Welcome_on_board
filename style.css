@@ -11,6 +11,7 @@
 ul, button, a {
     all: unset;
     list-style: none;
+    cursor: pointer;
 }
 
 h1, h2, h3 {
@@ -28,9 +29,10 @@ p {
     --h3-color: black;
     --navtext-color: white;
     --btn-color: white;
+    --footerbg-color: #d9d9d9;
 }
 
-/* Nav barre */
+/* Navbar */
 
 nav {
     background-color: var(--bg-color);
@@ -86,12 +88,13 @@ header > h1 {
 
 section {
     padding: 1rem;
+    padding-top: 1.5rem;
 }
 
 section > div {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
+    gap: 1rem;
 }
 
 section > h2 {
@@ -134,5 +137,85 @@ section > div > article > button {
     &:hover {
         background-color: var(--navtext-color);
         color: var(--h2-color);
+    }
+}
+
+/* About */
+
+section > p {
+    max-width: 65ch;
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footerbg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 992px) {
+    
+    /* Navbar */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+
+    /* Header */
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        padding-bottom: 5rem;
+    }
+
+    header > h1 {
+        font-size: 3rem;
+    }
+
+    header > img {
+        height: 17rem;
+    }
+
+    /* Articles */
+    section {
+        padding-top: 3rem;
+        
+        
+    }
+
+    section > h2 {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    section > div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    section > div > article {
+        min-width: 20rem;
+    }
+
+    section > div > article > img {
+        max-height: 15rem;
+    }
+
+    /* About */
+    section > p {
+        max-width: 65ch;
+        margin: 0 auto;
     }
 }
